@@ -1,0 +1,7 @@
+Currently logged user and his logname: pallavi
+Current Shell: /bin/bash
+Home Directory /home/pallavi
+Operating System Type x86_64
+Current path Setting: /home/pallavi/.rbenv/plugins/ruby-build/bin:/home/pallavi/.rbenv/shims:/home/pallavi/.rbenv/bin:/home/pallavi/bin:/home/pallavi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+Current working directory is /home/pallavi/stuffs/fosslab/shellscript
+Currently logged number of users: pallavi
