@@ -1,10 +1,17 @@
 #!/bin/bash
+#converting s2 result to text file 
 pdftotext -layout -nopgbrk result_MDL.pdf result_MDL.txt 
+#extracting CS students TCE16CS006 for extra entry anees mon
 grep -E 'MDL16CS|TCE16CS006' result_MDL.txt>temp.txt
+#extracting the CS120 which is on the next line
+#using the bracket to avoid the MDL16CS120 entry 
 grep 'CS120(' result_MDL.txt>temp2.txt
+#adding line numbers to join the files i.e add the CS120 column
 cat -n  temp.txt>temp3.txt
 cat -n  temp2.txt>temp4.txt
+#joining the temporary files
 join temp3.txt temp4.txt>results.txt
+#removing unecessay files
 rm temp3.txt temp4.txt
 join -1 2 -2 6 results.txt c4b.txt>results2.txt
 sed -i 's/(O),/ 10 /g; s/(A+),/ 9 /g; s/(A),/ 8.5 /g; s/(B+),/ 8 /g; s/(B),/ 7 /g; s/(C),/ 6 /g; s/(P),/ 5 /g; s/(F),/ 0 /g' results2.txt
