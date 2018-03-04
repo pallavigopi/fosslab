@@ -2,7 +2,7 @@
 #converting s2 result to text file 
 pdftotext -layout -nopgbrk result_MDL.pdf result_MDL.txt 
 #extracting CS students
-grep -E 'MDL16CS|TCE16CS006' result_MDL.txt>temp.txt
+grep -E 'MDL16CS' result_MDL.txt>temp.txt
 #extracting the CS120 which is on the next line
 #using the bracket to avoid the MDL16CS120 entry 
 grep 'CS120(' result_MDL.txt>temp2.txt
@@ -25,7 +25,7 @@ sed -i 's/(O)/ 10 /g; s/(A+)/ 9 /g; s/(A)/ 8.5 /g; s/(B+)/ 8 /g; s/(B)/ 7 /g; s/
 awk '{sum=0; sum=sum+($4*4+$6*4+$8*3+$10*1+$12*1+$14*4+$16*3+$18*3+$20*1); {printf("%s %s %d %d %.2f %s %s %s \n",$1,$22,$23,$24,sum/24,$26,$27,$28)}}' results2.txt>sem2.txt
 pdftotext -layout -nopgbrk result_s1.pdf result_s1.txt 
 #repeating same steps for S1
-grep -E 'MDL16CS|TCE16CS006' result_s1.txt>temp.txt
+grep -E 'MDL16CS' result_s1.txt>temp.txt
 grep 'CS110(' result_s1.txt>temp2.txt
 cat -n  temp.txt>temp3.txt
 cat -n  temp2.txt>temp4.txt
