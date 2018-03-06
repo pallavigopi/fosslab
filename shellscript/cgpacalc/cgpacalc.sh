@@ -16,7 +16,7 @@ rm temp3.txt temp4.txt
 #join C4b and the results based on KTU roll no 
 join -1 2 -2 6 results.txt c4b.txt>results2.txt
 #replacing the grades with values
-sed -i 's/(O),/ 10 /g; s/(A+),/ 9 /g; s/(A),/ 8.5 /g; s/(B+),/ 8 /g; s/(B),/ 7 /g; s/(C),/ 6 /g; s/(P),/ 5 /g; s/(F),/ 0 /g' results2.txt
+sed -i 's/(O),/ 10 /g; s/(A+),/ 9 /g; s/(A),/ 8.5 /g; s/(B+),/ 8 /g; s/(B),/ 7 /g; s/(C),/ 6 /g; s/(P),/ 5 /g; s/(F),/ 0 /g; s/(FE)/ 0 /g; s/(I)/ 0 /g' results2.txt
 #the last row does not have , have comma, to replace the grades of last row
 sed -i 's/(O)/ 10 /g; s/(A+)/ 9 /g; s/(A)/ 8.5 /g; s/(B+)/ 8 /g; s/(B)/ 7 /g; s/(C)/ 6 /g; s/(P)/ 5 /g; s/(F)/ 0 /g' results2.txt
 #calculating gpa $4 represents the fourth column and so on
