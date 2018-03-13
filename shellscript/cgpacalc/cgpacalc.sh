@@ -7,8 +7,7 @@ grep -E 'MDL16CS' result_MDL.txt>temp.txt
 #using the bracket to avoid the MDL16CS120 entry 
 grep 'CS120(' result_MDL.txt>temp2.txt
 #adding line numbers to join the files i.e add the CS120 column
-cat -n  temp.txt>temp3.txt
-cat -n  temp2.txt>temp4.txt
+cat -n  temp.txt>temp3.txt && cat -n  temp2.txt>temp4.txt
 #joining the temporary files
 join temp3.txt temp4.txt>results.txt
 #removing unecessay files
@@ -39,7 +38,7 @@ awk '{sum=0; sum=sum+($4*4+$6*4+$8*3+$10*3+$12*3+$14*3+$16*1+$18*1+$20*1); {prin
 join -o 1.1 1.2 1.3 1.4 1.5 2.5 1.6 1.7 1.8 sem1.txt sem2.txt>y1.txt
 #echo heading to textfile and appending the cgpa and other info
 echo "KTU_Reg_No Rollno S1 S2 CGPA Name">final.txt
-awk '{sum=0; sum=sum+($5+$6); {printf("%s %d %.2f %.2f %.2f %s %s %s\n",$1,$4,$5,$6,sum/2,$7,$8,$9)}}' y1.txt>>final.txt
+awk '{sum=0; sum=sum+($5*23+$6*24); {printf("%s %d %.2f %.2f %.2f %s %s %s\n",$1,$4,$5,$6,sum/47,$7,$8,$9)}}' y1.txt>>final.txt
 #display the final.txt
 cat final.txt
 #remove all the temporary files
