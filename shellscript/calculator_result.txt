@@ -1,0 +1,40 @@
+./calculator.sh 
+
+Enter first number:
+59
+Enter second number:
+11
+
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Modulus
+Enter your choice:
+1
+Sum =70
+Do you want to continue ?
+y
+
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Modulus
+Enter your choice:
+3
+Mul =649
+Do you want to continue ?
+y
+
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Modulus
+Enter your choice:
+2
+Sub =48
+Do you want to continue ?
+n
+
