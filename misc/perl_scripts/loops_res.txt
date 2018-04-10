@@ -1,0 +1,9 @@
+Sum of numbers positive and negative numbers
+Enter a number(i/p terminates at 0):1
+Enter a number(i/p terminates at 0):2
+Enter a number(i/p terminates at 0):3
+Enter a number(i/p terminates at 0):-7
+Enter a number(i/p terminates at 0):-10
+Enter a number(i/p terminates at 0):8
+Enter a number(i/p terminates at 0):0
+Sum of numbers positive numbers is 14 and negative numbers is -17
