@@ -1,0 +1,11 @@
+The File contents:
+This is the First line.
+ This is the Next line.
+Enter data to write to file: 
+New line added!!
+
+New contents of the file: 
+This is the First line.
+ This is the Next line.
+ New line added!!
+
