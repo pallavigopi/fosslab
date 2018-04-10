@@ -1,0 +1,130 @@
+body {
+  background-color: #787878 ;
+}
+
+input[type=text],select
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  diplay: inline-block;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  font-family: 'Roboto', sans-serif;
+}
+
+button
+{
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin-top: 1em;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  vertical-align: middle;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+button:hover
+ {
+   background-color: #45a049;
+ }
+
+select {
+  font-family: 'Roboto', sans-serif, light;
+  font-size: 18px;
+}
+
+::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  }
+
+.box
+{
+  width: 100%;
+  align-self: center;
+  border-radius: 0px;
+  background-color: #f9f9f9;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-top: 1em;
+  /*margin-left: 2em;
+  margin-right: 2em;*/
+  vertical-align:middle;
+  opacity: 1.0;
+}
+
+div.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+.container {
+  display:flex;
+  flex-direction: column;
+  align-self: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+#formData {
+  text-align:left;
+}
+
+/* fonts start */
+.text-font {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
+  color: #777777;
+}
+.heading {
+  margin: 0em;
+  font-family: 'Roboto', sans-serif;
+  color: #777777;
+  font-size: 2.2em;
+  align-self: flex-start;
+}
+
+/*font ends*/
+@media screen and (min-width: 800px) and (max-width: 950px){
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto,25em)) 1fr;
+    }
+  #cards {
+    grid-column: 2/4;
+    align-items: flex-start;
+  }
+  div.card {
+    width: 30em;
+  }
+}
+@media screen and (min-width: 950px){
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto,25em)) 1fr;
+    }
+  #cards {
+    grid-column: 2/4;
+    align-items: flex-start;
+  }
+  div.card {
+    width: 50em;
+  }
+  .heading {
+    font-size: 2.8em;
+  }
+}
+
