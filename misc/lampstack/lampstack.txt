@@ -1,0 +1,26 @@
+1. To install lamp stack
+sudo apt-get install tasksel
+sudo tasksel install lamp-server
+
+2. Check if its properly installed
+apache2 -v
+php -v
+
+3. Configure Mysql
+mysql_secure_installation
+(give y to all options)
+
+4. Start the Apache2 server
+sudo service apache2 start 
+sudo service apache2 restart
+(use accordingly)
+
+5. Check on local host if apache is working
+
+6. Add info.php to /var/www/html/
+Content of info.php
+<?php
+phpinfo();
+?>
+
+7. Check if working at localhost/info.php 
