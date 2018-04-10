@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 #download via browser or use wget
-wget https://www.kernel.org/pub/linux/kernel/v3.x/linux-4.16.tar.xz
+https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.16.1.tar.xz
 
 #untar file for compiling it
 tar -xvf linux-4.16.1.tar.xz
