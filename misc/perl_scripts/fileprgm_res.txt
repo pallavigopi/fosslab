@@ -1,0 +1,3 @@
+perl ./fileprgm.pl 
+The total value is 5
+
