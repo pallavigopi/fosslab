@@ -4,11 +4,13 @@ clear
 sum=0
 i="y"
 
+#inputing the numbers
 echo "Enter first number:"
 read n1
 echo "Enter second number:"
 read n2
-while [ $i = "y" ]
+#Choices
+while [ $i = "y" ]  #Loop
 do
 echo
 echo "1. Addition"
@@ -18,7 +20,7 @@ echo "4. Division"
 echo "5. Modulus"
 echo "Enter your choice:"
 read ch
-case $ch in
+case $ch in   #Process result
   1)sum=`expr $n1 + $n2`
     echo "Sum ="$sum;;
   2)sum=`expr $n1 - $n2`
@@ -35,6 +37,6 @@ echo "Do you want to continue ?"
 read i
 if [ $i != "y" ]
 then
-   exit
+   exit #End Loop
 fi
 done
